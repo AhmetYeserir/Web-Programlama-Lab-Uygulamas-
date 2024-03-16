@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayıt Formu</title>
+  <style>
+    table {
+      width: 40%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 2px solid black;
+      padding: 6px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <table>
+      <tr>
+        <th>Kayıt Formu</th>
+      </tr>
+      <tr>
+        <td>Ad</td>
+        <td><input type="text" name="ad"></td>
+      </tr>
+      <tr>
+        <td>Soyad</td>
+        <td><input type="text" name="soyad"></td>
+      </tr>
+      <tr>
+        <td>E-posta</td>
+        <td><input type="email" name="email"></td>
+      </tr>
+      <tr>
+        <td>Telefon</td>
+        <td><input type="tel" name="telefon"></td>
+      </tr>
+      <tr>
+        <td>Mesajınız</td>
+        <td><textarea name="mesaj" rows="4" cols="50"></textarea></td>
+      </tr>
+      <tr>
+        <td>Fotoğraf Ekle</td>
+        <td><input type="file" name="foto"></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;"><input type="submit" value="Kayıt Ol"></td>
+      </tr>
+    </table>
+  </form>
+
+  <table>
+    <tr>
+      <th>Diğer Bilgiler</th>
+    </tr>
+    <tr>
+        <h3 style="text-align: left;">Buradaki Alanlar Mesleki Deneyimi Kapsar</h3>
+      <td>Sektöre Giriş Tarihi</td>
+      <td><input type="date" name="giris_tarihi_genel"></td>
+    </tr>
+    <tr>
+      <td>Sektör Deneyimi</td>
+      <td>
+        <label>
+          <input type="radio" name="sektor_deneyimi_genel" value="1"> 0 Yıl
+        </label>
+        <label>
+          <input type="radio" name="sektor_deneyimi_genel" value="2"> 1-5 Yıl
+        </label>
+        <label>
+          <input type="radio" name="sektor_deneyimi_genel" value="3"> 5-10 Yıl
+        </label>
+        <label>
+          <input type="radio" name="sektor_deneyimi_genel" value="4"> 10+ Yıl
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>Programlama Dilleri</td>
+      <td>
+        <select name="kodlama_dilleri_genel" multiple>
+          <option value="Python">Python</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Java">Java</option>
+          <option value="C#">C#</option>
+          <option value="PHP">PHP</option>
+          </select>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center;"><input type="submit" value="İşlemi Tamamla"></td>
+    </tr>
+  </table>
+</body>
+</html>
